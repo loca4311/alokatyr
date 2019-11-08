@@ -585,7 +585,7 @@ body {
 .composition__link-btn,
 .reviews__link-popup,
 .build__link,
-.certificate__link,
+.cerificate__link,
 .mobile__link-btn {
     padding: 22px 85px 22px 26px;
     outline: none;
@@ -603,7 +603,7 @@ body {
 .popularity__box-link::after,
 .reviews__link-popup::after,
 .build__link::after,
-.certificate__link::after,
+.cerificate__link::after,
 .mobile__link-btn::after {
     content: '';
     background-image: url("../images/arrow.png");
@@ -1136,7 +1136,7 @@ body {
     overflow: visible;
 }
 
-.certificate__title {
+.cerificate__title {
     font-size: 40px;
     line-height: 50px;
     margin-bottom: 30px;
@@ -1153,8 +1153,8 @@ body {
     height: 560px;
 }
 
-.certificate__content {
-    max-width: 670px;
+.cerificate__content {
+    min-width: 670px;
     margin-right: 60px;
     padding-left: 70px;
 }
@@ -1200,12 +1200,12 @@ body {
     min-width: 370px;
 }
 
-.certificate__link {
+.cerificate__link {
     right: 0;
     bottom: 0;
     padding: 18px 85px 18px 64px;
 }
 
-.certificate__link::after {
+.cerificate__link::after {
     top: 27px;
 }

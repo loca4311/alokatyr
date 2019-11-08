@@ -21,6 +21,9 @@
 }
 
 @media (max-width: 1230px) {
+    .cerificate__content {
+        padding-left: 0;
+    }
 
     .reviews-text:nth-child(even) {
         display: none;
@@ -149,10 +152,6 @@
 }
 
 @media (max-width: 1140px){
-
-    
-
-
     .advantages__inner {
         flex-wrap: wrap;
     }
@@ -165,11 +164,8 @@
 }
 
 @media (max-width: 1040px){
+    
 
-    .certificate__content {
-        min-width: 0;
-        padding-left: 0px;
-    }
     .top__inner-img {
         margin-left: 0;
     }
