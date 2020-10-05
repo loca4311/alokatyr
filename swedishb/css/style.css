@@ -818,6 +818,37 @@ body {
     position: relative;
 }
 
+.bg_02 {
+    background-image: url(../images/comp-2.png);
+}
+.bg_03 {
+    background-image: url(../images/comp-3.png);
+}
+.bg_04 {
+    background-image: url(../images/comp-4.png);
+}
+.bg_05 {
+    background-image: url(../images/comp-5.png);
+}
+.bg_06 {
+    background-image: url(../images/comp-6.png);
+}
+.bg_07 {
+    background-image: url(../images/comp-7.png);
+}
+.bg_08 {
+    background-image: url(../images/comp-8.png);
+}
+.bg_09 {
+    background-image: url(../images/comp-9.png);
+}
+.bg_10 {
+    background-image: url(../images/comp-10.png);
+}
+.bg_11 {
+    background-image: url(../images/comp-11.png);
+}
+
 .composition__item-num,
 .composition__item-name {
     font-size: 14px;
