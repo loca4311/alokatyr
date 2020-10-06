@@ -287,6 +287,7 @@ body{
 
 .slick-prev {
   left: -20px;
+  z-index: 6;
 }
 
 .slick-next {
@@ -368,7 +369,7 @@ body{
   top: 2px;
 }
 
-/* 2:19:41 / 3:06:55 */
+/* 2:19:41 / 3:06:55 - day 2 */ 
 
 .footer__copy {
   padding-top: 40px;
