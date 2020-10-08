@@ -8,6 +8,26 @@ $(function(){
 
   $('.menu__btn').on('click', function() {
     $('.menu__list').slideToggle();
+    $('.header__burger,.header__menu').toggleClass('active');
+    $('body').toggleClass('lock');
   });
 
-});
+  // $('.menu__btn').on('click', function() {
+  //   $('.menu__list').slideToggle();
+  // });
+
+  $(function() { 
+    $('.reason__text').readmore({ 
+    moreLink: '<a href="#" style="color: #ECB84C; margin-left: 100px">Читати більше...</a>', 
+    lessLink: '<a href="#" style="color: #ECB84C; margin-left: 100px">Менше</a>', 
+    collapsedHeight: 110, 
+    speed: 100, 
+    afterToggle: function(trigger, element, expanded) { 
+    if(! expanded) { // The "Close" link was clicked 
+    $('html, body').animate({scrollTop: $(element).offset().top}, {duration: 100}); 
+    } 
+    } 
+    }); 
+    });
+
+  });

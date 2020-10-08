@@ -38,6 +38,184 @@ body{
   border-bottom: 1px solid rgba(144, 144, 144,.5);
 }
 
+/* Бургер */
+
+.header__top-menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header__top-menu:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5e5373;
+  z-index: 2;
+}
+
+.header__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.header__logo {
+  flex: 0 0 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+.header__logo img {
+  max-width: 100%;
+  display: block;
+}
+
+.header__burger {
+  display: none;
+}
+.header__menu {}
+
+.header__list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.header__list li {
+  margin-left: 20px;
+}
+
+.header__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+@media (max-width: 878px) {
+
+  body.lock {
+    overflow: hidden;
+  }
+
+  .header__body {
+    height: 50px;
+  }
+
+  .header__logo {
+    flex: 0 0 40px;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .header__burger span {
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger:before,
+  .header__burger::after {
+    content: '';
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger:before {
+    top: 0;
+  }
+
+  .header__burger:after {
+    bottom: 0;
+  }
+  
+  .header__burger.active span {
+    transform: scale(0);
+  }
+
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+    background-color: #18b5a4;
+    padding: 70px 10px 0 10px;
+  }
+
+  .header__menu.active {
+    top: 0;
+  }
+
+  .header__list {
+    display: block;
+  }
+
+  .header__list li {
+    margin-bottom: 20px;
+  }
+  
+
+}
+
+/* dada
+da
+d
+as
+ds
+d
+sd
+as
+ds
+ */
+
+
+
+
+
+
+
+
+
+
+
 .title {
   font-size: 32px;
   line-height: 38px;
@@ -52,8 +230,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 40px;
-}
+  padding: 120px 40px 40px 40px;}
 
 .header__top-inner{
   border: 2px solid #ECB84C;
@@ -98,8 +275,9 @@ body{
   margin-right: 30px;
 }
 
-.menu{
+/* .menu{
   border-bottom: 1px solid rgba(144, 144, 144,.5);
+  display: block;
 }
 
 .menu__list{
@@ -122,10 +300,14 @@ body{
 .menu__list-link:hover{
   color: #4e5665;
   border-bottom: 4px solid #ec884c;
-}
+} */
 
 .reason {
   padding: 80px 0 0;
+}
+
+.reason__text {
+  overflow: hidden;
 }
 
 
@@ -467,9 +649,9 @@ body{
   line-height: 19px;
 }
 
-.menu__btn {
+/* .menu__btn {
   display: none;
-}
+} */
 
 
 .about__images-box img {
@@ -477,6 +659,10 @@ body{
 }
 
 @media (max-width: 1075px){
+  .header__title {
+    font-size: 150px;
+  }
+
   .about__dot--1 {
     top: 150px;
     left: 75px;
@@ -502,6 +688,8 @@ body{
     padding-left: 0;
   }
 }
+
+
 
 @media (max-width: 840px){
   .about__item {
@@ -547,7 +735,7 @@ body{
     font-size: 20px;
   }
 
-  .menu {
+  /* .menu {
     position: relative;
   }
   .menu__btn {
@@ -580,7 +768,7 @@ body{
 
   .menu__list-link:hover {
     border-bottom: 4px solid transparent;
-  } 
+  }  */
   
   .slick-next {
     right: 20px;
@@ -636,6 +824,10 @@ body{
 }
 
 @media (max-width: 470px) {
+  .header__title {
+    font-size: 65px;
+  }
+
   .footer__items {
     display: block;
   }
@@ -679,7 +871,7 @@ body{
 
 
 @media (min-width: 700px){
-  .menu_list {
+  /* .menu_list {
     display: flex !important;
-  }
+  } */
 }
