@@ -6,8 +6,7 @@ $(function(){
 
   });
 
-  $('.menu__btn').on('click', function() {
-    $('.menu__list').slideToggle();
+  $('.header__burger').on('click', function(event) {
     $('.header__burger,.header__menu').toggleClass('active');
     $('body').toggleClass('lock');
   });
