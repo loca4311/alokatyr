@@ -56,7 +56,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #5e5373;
+  background-color: #324875;
   z-index: 2;
 }
 
@@ -234,7 +234,7 @@ ds
   padding: 120px 40px 40px 40px;}
 
 .header__top-inner{
-  border: 2px solid #ECB84C;
+  border: 2px solid #324875;
   border-bottom: none;
   display: flex;
   flex-direction: column;
@@ -383,14 +383,15 @@ ds
 }
 
 .about__box::before {
-  background-image: url(../images/decor-left.svg);
+  border-top: 2px solid #324875;
+  border-left: 2px solid #324875;
   top: 19px;
   left: 19px;
 }
 
 .about__box::after {
-  border-bottom: 2px solid #ECB84C;
-  border-right: 2px solid #ECB84C;
+  border-bottom: 2px solid #324875;
+  border-right: 2px solid #324875;
   bottom: 19px;
   right: 19px;
 }
@@ -416,14 +417,15 @@ ds
   right: 19px;
   left: auto;
   background-image: none;
-  border-right: 2px solid #ECB84C;
-  border-top: 2px solid #ECB84C;
+  border-left: none;
+  border-right: 2px solid #324875;
+  border-top: 2px solid #324875;
 }
 
 .about__item:nth-child(even) .about__box::after {
   left: 19px;
   border-right: none;
-  border-left: 2px solid #ECB84C;
+  border-left: 2px solid #324875;
 }
 
 .about__preview-title {
@@ -443,28 +445,28 @@ ds
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: rgba(236, 184, 76, .75);
+  background-color: rgba(50, 72, 117, .75);
   position: absolute;
   cursor: pointer;
 }
 
 .about__dot--1 {
-  top: 190px;
-  left: 148px;
+  top: 403px;
+  left: 239px;
 }
 
 .about__dot--2 {
-  top: 188px;
+  top: 280px;
   left: 495px;
 }
 
 .about__dot--3 {
-  top: 147px;
-  right: 374px;
+  bottom: 230px;
+  right: 616px;
 }
 
 .about__dot--4 {
-  bottom: 28px;
+  bottom: 297px;
   right: 299px;
 }
 
@@ -474,7 +476,7 @@ ds
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #FFD600;
+  background-color: #324875;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -665,23 +667,23 @@ ds
   }
 
   .about__dot--1 {
-    top: 150px;
-    left: 75px;
+    top: 364px;
+    left: 248px;
   }
 
   .about__dot--2 {
-    top: 188px;
+    top: 256px;
     left: 340px;
   }
 
   .about__dot--3 {
-    top: 133px;
-    right: 260px;
+    bottom: 235px;
+    right: 480px;
   }
 
   .about__dot--4 {
-    bottom: 28px;
-    right: 200px;
+    bottom: 268px;
+    right: 278px;
   }
 
   .footer__item--company {
@@ -690,6 +692,11 @@ ds
   }
 }
 
+@media (max-width: 960px) {
+  .about__dot {
+    display: none;
+  }
+}
 
 
 @media (max-width: 840px){
@@ -707,9 +714,7 @@ ds
     background-position: top;
   }
   
-  .about__dot {
-    display: none;
-  }
+
 
   .about__images-box {
     padding-top: 0;
